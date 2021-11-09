@@ -11,7 +11,6 @@ public class TestingTheCardApplicationForm {
     @Test
     void shouldRegisterByApplication() {
         open("http://localhost:9999/");
-        SelenideElement form = $("[data-test-id=card-application-form]");
         $("[name='name']").setValue("Иванов Иван");
         $("[name='phone']").setValue("+79270000000");
         $("[data-test-id='agreement']").click();
